@@ -1,0 +1,83 @@
+# Terraform files
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+!example.tfvars
+
+# Crash log files
+crash.log
+crash.*.log
+
+# Exclude all .tfvars files, which might contain sensitive data
+*.tfvars
+*.tfvars.json
+
+# Ignore override files as they are usually used for local environment configuration
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ignore CLI configuration files
+.terraformrc
+terraform.rc
+
+# Ignore plan files (unless you want to commit them)
+*.tfplan
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Environment variables
+.env
+.env.local
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Logs
+*.log
+logs/
+
+# Node modules (if using Terraform Cloud/Enterprise)
+node_modules/
+
+# Python cache (if using Python-based Terraform)
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Backup files
+*.bak
+*.backup
+
+# State backend config (if using remote backend)
+backend.tf (optional - only if it contains sensitive data)
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# AWS credentials (never commit these!)
+credentials
+.aws/
+
+# SSH keys
+*.pem
+*.key
+SSH_OPTIONS
+
+# Mac files
+.DS_Store
+.AppleDouble
+.LSOverride
